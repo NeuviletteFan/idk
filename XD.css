@@ -1,0 +1,51 @@
+.Neuvi {
+    height: 400px;
+    width: 125%;
+}
+
+.baner {
+    float: left;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+
+.baner-główny {
+    background-color: #A0AFE5;
+    color: black;
+    font-size: large;
+    height: 250%;
+    width: 55%;
+    float: right;
+    text-align: center;
+}
+
+.baner-pod {
+    height: 150%;
+    width: 45%;
+    float: right;
+}
+.baner-lewy {
+    background-color: #B9CFE3;
+    color: whitesmoke;
+    height: 50%;
+    width: 45%;
+    clear: both;
+    float: left;
+
+}
+
+.baner-prawy {
+    background-color: #B9CFE3;
+
+}
+
+* {
+    font-family: "Times New Roman", Times, serif;
+}
