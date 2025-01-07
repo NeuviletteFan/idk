@@ -1,0 +1,48 @@
+* {
+    word-spacing: 2px;
+}
+
+header {
+    background-color: #9bb1ff;
+    text-align: center;
+    color: whitesmoke;
+    height: 25%;
+    padding: 7px;
+    width: auto;
+    font-family: Dancing Script;
+}
+
+body {
+    background-color: #9bb1ff;
+}
+
+.blok-lewy {
+    float: left;
+    text-align: left;
+    width: 50%;
+    height: 40%;
+}
+
+.blok-prawy {
+    float: right;
+}
+
+a:hover {
+    color: aliceblue;
+    word-spacing: 5px;
+}
+
+footer {
+    background-color: #bfd7ff;
+    text-align: center;
+    color: whitesmoke;
+    padding: 2px;
+    clear: both;
+}
+
+dancing-script-<uniquifier> {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
