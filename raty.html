@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+        <title>Kursy Komputerowe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="baner.png" alt="kursy Komputerowe">
+        </header>
+
+        <div class="blok-menu">
+            <a href="index.html">Strona główna</a>
+            <a href="raty.html">Koszt rat</a>
+            <a href="https://moje-szkolenia.pl/">Nasz partner</a>
+        </div>
+
+        <h3>Oblicz miesięczną ratę</h3>
+        <form>
+            <label for="krjs" value="krjs" class="kontrolki">Kurs React.js</label>
+            <input type="checkbox" id="1" class="kontrolki">
+            <br>
+            <label for="kjs" value="kjs" class="kontrolki">Kurs JavaScript</label>
+            <input type="checkbox" id="2" class="kontrolki">
+            <br>
+            <label for="raty" value="oblicz"class="kontrolki">Liczba rat</label>
+            <input type="number" id="3" class="kontrolki">
+            <br><br>
+            <select id="4" name="wybor" class="kontrolki">
+            <option value="WW">Warszawa</option>
+            <option value="Kt">Katowice</option>
+            <option value="Gk">Gdańsk</option>
+            </select>
+            <br><br>
+            <button type="button" onclick="oblicz()" class="kontrolki">Oblicz</button>
+            
+            <br><br>
+        </form>
+        <p id="output">h</p>
+
+        <footer>
+            <p>Autor strony: Maja Homan</p>
+        </footer>
+
+    </body>
+</html>
+
+
+<script>
+    function oblicz(){
+        console.log("działa");
+        const miasto = document.getElementById(4).value;
+        const kwota = 0;
+        const liczba = document.getElementById(3).value;
+        const krjs = document.getElementById(1).checked;
+        const kjs = document.getElementById(2).checked;
+        const output = document.getElementById("output");
+
+        if(krjs && kjs){
+            output.innerText = "Kurs odbędzie się w " + miasto + ". Koszt całkowity: 8000" + " zł" + ". Płacisz " + liczba + "rat po " + 8000 / liczba + " zł"; 
+        }
+        else if(kjs){
+            output.innerText = "Kurs odbędzie się w " + miasto + ". Koszt całkowity: 3000" + " zł" + ". Płacisz " + liczba + "rat po " + 3000 / liczba + " zł"; 
+        }
+        else if(krjs){
+            output.innerText = "Kurs odbędzie się w " + miasto + ". Koszt całkowity: 5000" + " zł" + ". Płacisz " + liczba + "rat po " + 5000 / liczba + " zł";    
+        }
+        else{
+            output.innerText = "wybierz jedną opcję";
+        }
+
+    }
+</script>

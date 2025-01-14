@@ -1,48 +1,64 @@
 * {
-    word-spacing: 2px;
-}
-
-header {
-    background-color: #9bb1ff;
-    text-align: center;
-    color: whitesmoke;
-    height: 25%;
-    padding: 7px;
-    width: auto;
-    font-family: Dancing Script;
+    font-family: Helvetica;
 }
 
 body {
-    background-color: #9bb1ff;
+    background-color: #EAEAEA;
 }
 
-.blok-lewy {
-    float: left;
-    text-align: left;
-    width: 50%;
-    height: 40%;
-}
-
-.blok-prawy {
-    float: right;
-}
-
-a:hover {
-    color: aliceblue;
-    word-spacing: 5px;
+.blok-menu {
+    background-color: #625B5B;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 footer {
-    background-color: #bfd7ff;
+    background-color: #625B5B;
+    color: white;
+    padding: 20px;
     text-align: center;
-    color: whitesmoke;
-    padding: 2px;
-    clear: both;
 }
 
-dancing-script-<uniquifier> {
-    font-family: "Dancing Script", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
+img {
+    width: 100%;
+}
+
+ol {
+    margin-left: 40px;
+    list-style-type: circle;
+}
+
+.blok-menu a {
+    font-weight: bold;
+    background-color: #EAEAEA;
+    color: #625B5B;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+.blok-menu a:hovers{
+    background-color: #625B5B;
+    color: #EAEAEA;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #EAEAEA;
+}
+
+table th, td {
+    border-style: dashed;
+    border-width: 1px;
+    border-width: 60%;
+    border-color: #625B5B;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.kontrolki {
+    margin: 5px;
+
+}
+
+ 
+   
